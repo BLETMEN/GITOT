@@ -1,0 +1,30 @@
+﻿<Page x:Class="USSR2._0.information"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="600"
+      Title="Информация о колледже">
+    <Page.Background>
+        <ImageBrush ImageSource="Resources/LU4SHE_4EM_KKTD.png" Stretch="UniformToFill"/>
+    </Page.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Margin="0 50 0 0">
+            <Image Source="Resources/LU4SHE_4EM_KKTD.jpg" Width="300" Height="150"/>
+        </StackPanel>
+        <TextBlock Grid.Row="1" Text="Berry College" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center" FontStyle="Oblique" Foreground="Blue" FontFamily="Cooper"/>
+        <TextBlock Grid.Row="1" Text="Директор: Стивен Р. Бриггс" FontSize="25" Margin="5 200 0 0" Foreground="LightGray"/>
+        <TextBlock Grid.Row="1" Text="Номер приемной комиссии: +1 706-232-5374" FontSize="25" Margin="5 240 0 0" Foreground="LightGray"/>
+        <TextBlock Grid.Row="1" Text="Cайт колледжа berry.edu" FontSize="25" Margin="5 280 0 0" Foreground="LightGray"/>
+        <StackPanel Grid.Row="2" Margin="5" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Button x:Name="BackClick" Click="Back_Button_Click" Content="Назад" Width="70" Background="LightGray" Margin="0 10 0 0"/>
+        </StackPanel>
+    </Grid>
+</Page>

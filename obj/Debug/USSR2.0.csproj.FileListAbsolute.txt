@@ -1,0 +1,54 @@
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\bin\Debug\USSR2.0.exe.config
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\bin\Debug\USSR2.0.exe
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\bin\Debug\USSR2.0.pdb
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\bin\Debug\EntityFramework.dll
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\bin\Debug\EntityFramework.xml
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\MainWindow.g.cs
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\App.g.cs
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\USSR2.0_Content.g.cs
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\USSR2.0_MarkupCompile.cache
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\USSR2.0_MarkupCompile.lref
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\MainWindow.baml
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\USSR2.0.g.resources
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\USSR2._0.Properties.Resources.resources
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\USSR2.0.csproj.GenerateResource.cache
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\USSR2.0.csproj.CoreCompileInputs.cache
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\USSR2.0.csproj.CopyComplete
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\USSR2.0.exe
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\USSR2.0.pdb
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\Menu.g.cs
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\Menu.baml
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\Abiturientlar.g.cs
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\Abiturientlar.baml
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\ratetable.g.cs
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\ratetable.baml
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\Speci.g.cs
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\Speci.baml
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\information.g.cs
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\information.baml
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\LoginWindow.g.cs
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\LoginWindow.baml
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\addag.g.cs
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\addag.baml
+C:\Users\Rolks\source\repos\USSR2.0\USSR2.0\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\USSR2.0.csproj.AssemblyReference.cache
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\USSR2.0.csproj.SuggestedBindingRedirects.cache
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\information.baml
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\Abiturientlar.g.cs
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\addag.g.cs
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\information.g.cs
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\LoginWindow.g.cs
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\MainWindow.g.cs
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\Menu.g.cs
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\ratetable.g.cs
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\Speci.g.cs
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\App.g.cs
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\USSR2.0_Content.g.cs
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\USSR2.0_MarkupCompile.cache
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\USSR2.0_MarkupCompile.lref
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\USSR2.0.exe
+C:\Users\днс\Downloads\Telegram Desktop\USSR2.0\USSR2.0\USSR2.0\obj\Debug\USSR2.0.pdb

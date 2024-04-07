@@ -1,0 +1,28 @@
+﻿<Page x:Class="USSR2._0.Speci"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:USSR2._0"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="600"
+      Title="Специальности">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Row="1" x:Name="spec" IsReadOnly="True" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header ="Наименование специальности" Binding="{Binding Name}" Width="auto"/>
+                <DataGridTextColumn Header="Код специальности" Binding="{Binding SpecialityID}" Width="auto"/>
+                <DataGridTextColumn Header="Проходной балл на бюджет" Binding="{Binding Budget}" Width="auto"/>
+                <DataGridTextColumn Header="Проходной балл на внебюджет" Binding="{Binding Commerce}" Width="auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" >
+            <Button Grid.Row="2" Content="Назад" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" Width="70" Height="20" Click="back_click"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище CollegePriemModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CandidateExams">
+    <Key>
+      <PropertyRef Name="CandidateExamID" />
+    </Key>
+    <Property Name="CandidateExamID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CandidateID" Type="int" />
+    <Property Name="ExamID" Type="int" />
+    <Property Name="Score" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Candidates">
+    <Key>
+      <PropertyRef Name="CandidateID" />
+    </Key>
+    <Property Name="CandidateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Patronymic" Type="nvarchar" MaxLength="50" />
+    <Property Name="BirthDate" Type="date" />
+    <Property Name="PassportDetails" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContactDetails" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="INN" Type="nvarchar" MaxLength="12" />
+    <Property Name="SNILS" Type="nvarchar" MaxLength="11" />
+    <Property Name="CertificateScore" Type="float" />
+    <Property Name="ParentsID" Type="int" />
+    <Property Name="SpecialityID" Type="int" />
+  </EntityType>
+  <EntityType Name="Dad">
+    <Key>
+      <PropertyRef Name="DadID" />
+    </Key>
+    <Property Name="DadID" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Patronymic" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="11" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Exams">
+    <Key>
+      <PropertyRef Name="ExamID" />
+    </Key>
+    <Property Name="ExamID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Mom">
+    <Key>
+      <PropertyRef Name="MomID" />
+    </Key>
+    <Property Name="MomID" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Patronymic" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="11" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Parents">
+    <Key>
+      <PropertyRef Name="ParentsID" />
+    </Key>
+    <Property Name="ParentsID" Type="int" Nullable="false" />
+    <Property Name="MomID" Type="int" />
+    <Property Name="DadID" Type="int" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "CollegePriem.dbo.Permissions" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Permissions">
+    <Key>
+      <PropertyRef Name="PermissionID" />
+    </Key>
+    <Property Name="PermissionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PermissionName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserID" Type="int" />
+  </EntityType>
+  <EntityType Name="Specialities">
+    <Key>
+      <PropertyRef Name="SpecialityID" />
+    </Key>
+    <Property Name="SpecialityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="Budget" Type="float" />
+    <Property Name="Commerce" Type="float" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <Association Name="FK__Candidate__ExamI__2B3F6F97">
+    <End Role="Exams" Type="Self.Exams" Multiplicity="0..1" />
+    <End Role="CandidateExams" Type="Self.CandidateExams" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Exams">
+        <PropertyRef Name="ExamID" />
+      </Principal>
+      <Dependent Role="CandidateExams">
+        <PropertyRef Name="ExamID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateExams_Candidates">
+    <End Role="Candidates" Type="Self.Candidates" Multiplicity="0..1" />
+    <End Role="CandidateExams" Type="Self.CandidateExams" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="CandidateID" />
+      </Principal>
+      <Dependent Role="CandidateExams">
+        <PropertyRef Name="CandidateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Candidates_Parents">
+    <End Role="Parents" Type="Self.Parents" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Candidates" Type="Self.Candidates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Parents">
+        <PropertyRef Name="ParentsID" />
+      </Principal>
+      <Dependent Role="Candidates">
+        <PropertyRef Name="ParentsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Candidates_Specialities">
+    <End Role="Specialities" Type="Self.Specialities" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Candidates" Type="Self.Candidates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Specialities">
+        <PropertyRef Name="SpecialityID" />
+      </Principal>
+      <Dependent Role="Candidates">
+        <PropertyRef Name="SpecialityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Parents_Dad">
+    <End Role="Dad" Type="Self.Dad" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Parents" Type="Self.Parents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dad">
+        <PropertyRef Name="DadID" />
+      </Principal>
+      <Dependent Role="Parents">
+        <PropertyRef Name="DadID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Parents_Mom">
+    <End Role="Mom" Type="Self.Mom" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Parents" Type="Self.Parents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mom">
+        <PropertyRef Name="MomID" />
+      </Principal>
+      <Dependent Role="Parents">
+        <PropertyRef Name="MomID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Roles_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Roles" Type="Self.Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Roles">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище CollegePriemModelContainer">
+    <EntitySet Name="CandidateExams" EntityType="Self.CandidateExams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Candidates" EntityType="Self.Candidates" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dad" EntityType="Self.Dad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Exams" EntityType="Self.Exams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Mom" EntityType="Self.Mom" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Parents" EntityType="Self.Parents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Specialities" EntityType="Self.Specialities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Permissions" EntityType="Self.Permissions" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Permissions].[PermissionID] AS [PermissionID], 
+    [Permissions].[PermissionName] AS [PermissionName]
+    FROM [dbo].[Permissions] AS [Permissions]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Candidate__ExamI__2B3F6F97" Association="Self.FK__Candidate__ExamI__2B3F6F97">
+      <End Role="Exams" EntitySet="Exams" />
+      <End Role="CandidateExams" EntitySet="CandidateExams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateExams_Candidates" Association="Self.FK_CandidateExams_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidateExams" EntitySet="CandidateExams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Candidates_Parents" Association="Self.FK_Candidates_Parents">
+      <End Role="Parents" EntitySet="Parents" />
+      <End Role="Candidates" EntitySet="Candidates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Candidates_Specialities" Association="Self.FK_Candidates_Specialities">
+      <End Role="Specialities" EntitySet="Specialities" />
+      <End Role="Candidates" EntitySet="Candidates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Parents_Dad" Association="Self.FK_Parents_Dad">
+      <End Role="Dad" EntitySet="Dad" />
+      <End Role="Parents" EntitySet="Parents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Parents_Mom" Association="Self.FK_Parents_Mom">
+      <End Role="Mom" EntitySet="Mom" />
+      <End Role="Parents" EntitySet="Parents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Roles_Users" Association="Self.FK_Roles_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Roles" EntitySet="Roles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
